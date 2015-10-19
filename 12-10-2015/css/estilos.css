@@ -1,0 +1,30 @@
+p{
+    background-color:blue;
+    width:70%;
+}
+ul{
+    background-color:green;
+    width:49%;
+}
+h1{
+    font-style:times;
+    float:right;
+    font-size:80px;
+}
+img{
+    width:200px;
+}
+#hobbies{
+    float:left;
+    width:50%;
+    margin-top:10px;
+    margin-right:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+#links{
+    float:right;
+    width:50%;
+    margin-right:10px;
+    margin-bottom:10px;
+}
