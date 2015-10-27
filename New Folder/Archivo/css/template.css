@@ -117,6 +117,9 @@ ul{
 .about-us img, .testimonials img, .chefs img{
     margin:15px 0px 15px 0px;
 }
+.chefs img{
+    padding:10px 5px 10px 5px;
+}
 .best-choice h4{
     font-size:12px;
     font-family:arial;
@@ -189,6 +192,9 @@ h3{
     .header .menu{
         text-align:center;
         margin-bottom:20px;
+    }
+    .names{
+        height:100px;
     }
 }
 @media screen and (max-width:991px){
