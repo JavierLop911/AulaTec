@@ -6,7 +6,7 @@ body{
 .header{
     border-top:30px solid #5FA022;
     background-color:#F2F0F0;
-    height:150px;
+    min-height:150px;
     box-shadow:1px 1px 10px #DDDBDB;
     z-index:1;
     position:relative;
@@ -32,9 +32,8 @@ body{
 }
 .slider{
     overflow:hidden;
-    height:615px;
+    max-height:615px;
     width:100%;
-    position:relative;
 }
 .slider ul{
     margin:0;
@@ -44,9 +43,10 @@ body{
     display:block;
 }
 .slider img{
-    position:absolute;
+    position:relative;
     left:50%;
     transform:translateX(-50%);
+    max-width:120%;
 }
 a{
     color:#E2827E;
@@ -73,7 +73,7 @@ h2, h3{
 }
 hr{
     display:block;
-    width:942px;
+    max-width:942px;
     height:15px;
     background:transparent url(../img/hor_separator.png) center scroll;
     margin-top:45px;
@@ -109,10 +109,13 @@ ul{
     float:right;
     margin-top:15px;
 }
-.best-choice img{
+.best-choice img, .about-us img, .chefs img{
     border:1px solid #ddd;
     padding:5px;
     background-color:#fff;
+}
+.about-us img, .testimonials img, .chefs img{
+    margin:15px 0px 15px 0px;
 }
 .best-choice h4{
     font-size:12px;
@@ -170,6 +173,7 @@ h3{
 .footer{
     height:110px;
     background-color:#5FA022;
+    margin-top:36px;
 }
 .footer p{
     line-height:110px;
@@ -178,4 +182,81 @@ h3{
     margin:0;
     font-weight:bold;
 }
+@media screen and (max-width:1199px){
+    .header h1{
+        text-align:center;
+    }
+    .header .menu{
+        text-align:center;
+        margin-bottom:20px;
+    }
+}
+@media screen and (max-width:991px){
+    .dish div{
+        margin-bottom:20px;
+    }
+    .welcome img{
+        margin:0 auto;
+        display:block;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .follow-us li a{
+        padding:1px;
+    }
+}
+@media screen and (max-width:767px){
+    .email-updates input[type="email"]{
+        width:auto;
+        display:inline-block;
+    }
+}
+@media screen and (max-width:600px){
+    .welcome .row div{
+        float:none;
+        width:100%;
+    }
+}
+@media screen and (max-width:480px){
+    .dish div{
+        float:none;
+    }
+}
+@media screen and (max-width:685px){
+    .menu li a{
+        padding:8px 4px 8px 4px;
+        font-size:15px;
+    }
+}
+@media screen and (max-width:535px){
+    .menu li{
+        display:block;
+        margin-top:15px;
+    }
+    .menu li a{
+        display:block;
+    }
+    .menu{
+        padding:0;
+    }
+}
+.purple{
+    color:#856660;
+}
+.names{
+    color:#E5887E;
+    font-size:20px;
+    height:210px;
+    text-align:center;
+}
+.names p{
+    margin-top:50px;
+}
+.chefs img{
+    
+}
+
+
+
+
 
