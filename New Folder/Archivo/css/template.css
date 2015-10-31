@@ -109,7 +109,7 @@ ul{
     float:right;
     margin-top:15px;
 }
-.best-choice img, .about-us img, .chefs img, .menu-pics img, .lat-new img{
+.best-choice img, .about-us img, .chefs img, .menu-pics img, .lat-new img,.img1 img, .img2 img{
     border:1px solid #ddd;
     padding:5px;
     background-color:#fff;
@@ -297,6 +297,9 @@ h3{
 }
 .lat-new, .categories{
     margin-top:30px;
+}
+.img1, .img2{
+    margin:20px 0 20px 0;
 }
 
 
