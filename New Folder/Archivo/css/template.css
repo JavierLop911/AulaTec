@@ -109,7 +109,7 @@ ul{
     float:right;
     margin-top:15px;
 }
-.best-choice img, .about-us img, .chefs img{
+.best-choice img, .about-us img, .chefs img, .menu-pics img, .lat-new img{
     border:1px solid #ddd;
     padding:5px;
     background-color:#fff;
@@ -257,6 +257,46 @@ h3{
 }
 .names p{
     margin-top:50px;
+}
+.address td, .address p{
+    color:#8A8383;
+    padding-right:15px;
+}
+.address iframe{
+    height:100%;
+    width:100%;
+}
+.message{
+    height:275px;
+    width:375px;
+    display:block;
+    margin-bottom:15px;
+}
+.address .map{
+    border:8px solid #fff;
+    height:300px;
+    width:450px;
+    margin-bottom:50px;
+}
+.btncon{
+    display:inline-block;
+}
+.con .form-control{
+    margin-bottom:15px;
+    width:220px;
+}
+.footer-con{
+    font-size:13px;
+}
+.chef-sec li{
+    margin-bottom:10px;
+}
+.lat-new .new1, .lat-new .new2{
+    margin:20px 0px 20px 0px;
+    font-size:12px;
+}
+.lat-new, .categories{
+    margin-top:30px;
 }
 
 
