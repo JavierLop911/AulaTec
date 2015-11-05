@@ -101,14 +101,51 @@
 
 // console.log(total);
 
-var n = prompt ("dame un numero")
-var Prim = false
-
-while (n > 0) {
-    if(n / n == 1 && n / 1 == n){
-        Prim == true
-    } else {
-        Prim == false
-    }
-}
-
+function llenarMatriz(){
+          var data = new Array();
+          var totalPrimos=0;
+          var numberPrimos='';
+          var arrayPrimos = new Array();
+          for(var i=0; i<4; i++){
+              data[i] = new Array();
+              for(var j=0; j<4; j++){
+                  var number = prompt ('Introduzca un numero: posicion ['+i+']['+j+']=');
+                  if(!isNaN(number) && number!=''){
+                       data[i][j]= parseInt(number);
+                       if(checkPrimo(parseInt(data[i][j]))){
+                           arrayPrimos[totalPrimos++]=    data[i][j]; 
+                       }
+                       //console.log('El numero'+number+ ' es primo? '+ checkPrimo(parseInt(number)));
+                       //console.log(' posicion = ['+i+']['+j+']'+data[i][j]);        
+                  }
+                  else{
+                      alert('Por favor introduzca un numero!!');
+                      j--;
+                  } 
+              }
+          }
+          for(var i=0; i<arrayPrimos.length; i++){
+              numberPrimos += arrayPrimos[i]+', ';
+          }
+          numberPrimos=numberPrimos.slice(0, -2);
+          alert('Total de numero primos en la matriz:'+arrayPrimos.length+' Numeros: '+numberPrimos);
+      }
+      function checkPrimo(number){
+          var divisor=1;
+          var primo=0;
+          for(var i=0; i<=number; i++){
+              if(number%i==0 ){
+                  primo++;
+              }
+              if(primo>2)
+                  break;
+          }  
+          if(primo==2){
+              return true;
+          }    
+          else{
+              return false;
+          }
+      }
+      
+      

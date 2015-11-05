@@ -196,6 +196,9 @@ h3{
     .names{
         height:100px;
     }
+    .img1 img, .img2 img{
+        margin:20px 0px 20px 0px;
+    }
 }
 @media screen and (max-width:991px){
     .dish div{
