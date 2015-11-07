@@ -64,11 +64,25 @@
                     	<h2>Contact Us</h2>
                     	<div>
                     		<form class="form-group">
-                    			<input type="name" placeholder="Name:" class="form-control" >
-                    			<input type="email" placeholder="email" class="form-control">
-                    			<input type="phone" placeholder="phone" class="form-control">
-                    			<input type="text" placeholder="message:" class="message">
-                    			<input type="submit" value="clear" class="btn btn-primary btncon">
+                    			<div class="alert alert-danger" id="con1">
+                    				<strong>Error al validar</strong>
+                    			</div>
+                    			<div class="alert alert-success" id="con2">
+  									<strong>Formulario Enviado</strong> 
+								</div>
+								<div class="form-group has-error 3">
+                    				<input type="name" placeholder="Name:" class="form-control " id="con3">
+                    			</div>
+                    			<div class="form-group has-error 3a">
+                    				<input type="email" placeholder="email" class="form-control" id="con3a">
+                    			</div>
+                    			<div class="form-group has-error 3b">
+                    				<input type="phone" placeholder="phone" class="form-control" id="con3b">
+                    			</div>
+                    			<div class="form-group">
+                    				<input type="text" placeholder="message:" class="message" id="con3c">
+                    			</div>
+                    			<input type="button" value="clear" class="btn btn-primary btncon clear">
                     			<input type="submit" value="send" class="btn btn-primary btncon">
                     		</form> 
                     	</div>	
