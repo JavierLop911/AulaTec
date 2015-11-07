@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var input=$("#submit");
     console.log(input);
-    input.val("nememe@gmail.com");
+    input.val("Suscribe");
 });
 $(".form-group .btn-primary").click(function(){
      var input=$('#submit');
