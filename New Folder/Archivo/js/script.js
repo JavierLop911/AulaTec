@@ -21,31 +21,36 @@ $(document).ready(function(){
     input3.removeClass('has-error');
     $(".btncon").click(function(event){
     event.preventDefault()
-        if( $("#con3").val() == "" || $("#con3a").val() == "" || $("#con3b").val() == "" || $("#con3c").val() == ""){
-            input1.show();
-            console.log("El formulario no ha sido enviado");
-        } else {
-            input1.hide();
-            input2.show();
-            console.log("El formulario fue enviado");
-        };
         if($("#con3").val() == ""){
             $("#con3").parents(".3").addClass("has-error");
-            console.log("ahi vas")
         } else {
             $("#con3").parents(".3").removeClass("has-error");
         };
         if($("#con3a").val() == ""){
             $("#con3a").parents(".3a").addClass("has-error");
-            console.log("ahi vas")
         } else {
             $("#con3a").parents(".3a").removeClass("has-error");
         };
         if($("#con3b").val() == ""){
             $("#con3b").parents(".3b").addClass("has-error");
-            console.log("ahi vas")
         } else {
             $("#con3b").parents(".3b").removeClass("has-error");
+        };
+        if($("#con3c").val() == ""){
+            $("#con3c").parents(".3c").addClass("has-error");
+        } else {
+            $("#con3c").parents(".3c").removeClass("has-error");
+        };
+        if( $("#con3").val() == "" || $("#con3a").val() == "" || $("#con3b").val() == "" || $("#con3c").val() == ""){
+            input1.show();
+        } else {
+            input2.show();
+            input1.hide();
+            $(".form-group")[0].reset();
+            $("#con3").parents(".3").removeClass("has-error");
+            $("#con3a").parents(".3a").removeClass("has-error");
+            $("#con3b").parents(".3b").removeClass("has-error");
+            $("#con3c").parents(".3c").removeClass("has-error");
         };
     });
     $(".form-group .clear").click(function(){
@@ -54,7 +59,49 @@ $(document).ready(function(){
         $("#con3").parents(".3").removeClass("has-error");
         $("#con3a").parents(".3a").removeClass("has-error");
         $("#con3b").parents(".3b").removeClass("has-error");
+        $("#con3c").parents(".3c").removeClass("has-error");
         $(".form-group")[0].reset();
+    });
+    $('#con3').focusout(function() {
+        if($('#con3').val() == ""){
+           $("#con3").parents(".3").addClass("has-error"); 
+        }
+    });
+    $('#con3a').focusout(function(){
+        if($('#con3a').val() == ""){
+           $("#con3a").parents(".3a").addClass("has-error"); 
+        }
+    });
+    $('#con3b').focusout(function(){
+        if($('#con3b').val() == ""){
+            $("#con3b").parents(".3b").addClass("has-error");
+        }
+    });
+    $('#con3c').focusout(function(){
+        if($('#con3c').val() == ""){
+            $("#con3c").parents(".3c").addClass("has-error");
+        }
+    });
+    $('#con3').focusin(function() {
+        if($('#con3').val() == ""){
+           $("#con3").parents(".3").removeClass("has-error"); 
+        }
+    });
+    $('#con3a').focusin(function(){
+        if($('#con3a').val() == ""){
+           $("#con3a").parents(".3a").removeClass("has-error"); 
+        }
+    });
+    $('#con3b').focusin(function(){
+        if($('#con3b').val() == ""){
+           $("#con3b").parents(".3b").removeClass("has-error");
+        }
+    });
+    $('#con3c').focusin(function(){
+        if($('#con3c').val() == ""){
+           $("#con3c").parents(".3c").removeClass("has-error");
+        }
+        console.log("algo aqui")
     });
     return false
 });
