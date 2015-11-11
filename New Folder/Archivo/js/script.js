@@ -106,4 +106,37 @@ $(document).ready(function(){
     });
     return false
 });
+$(document).ready(function(){
+    $(".menu-button").click(function(){
+        if($(".menu").hasClass("menu-close")) {
+            $(".menu").removeClass("menu-close")
+            $(".menu").addClass("menu-open")
+        } else {
+            $(".menu").removeClass("menu-open")
+            $(".menu").addClass("menu-close")
+        }
+    });
+});
+$(document).ready(function(){
+    function slider() {
+        setInterval(function(){
+                var active = $(".slider li.active");
+                if(active.length == 0) {
+                    active = $(".slider li:first");
+                    active.addClass("active");
+                } else {
+                    active.removeClass("active")
+                    if(active.next("li").length > 0) {
+                       active = active.next("li"); 
+                    } else {
+                        active = $(".slider li:first")
+                    }
+                        active.addClass("active");
+                }
+        }, 3000 ); 
+    }
+    
+    slider();
+});
+
 

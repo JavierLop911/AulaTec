@@ -219,6 +219,15 @@ h3{
         width:auto;
         display:inline-block;
     }
+    .menu.menu-open{
+    height:400px;
+    }
+    .menu.menu-close{
+    height:0px;
+    }
+    .menu{
+        overflow:hidden;
+    }
 }
 @media screen and (max-width:600px){
     .welcome .row div{
@@ -308,7 +317,38 @@ h3{
     width:380px;
     height:270px;
 }
-
+.header-menu{
+    position:relative;
+}
+.menu-button{
+    position:absolute;
+    top:0;
+    right:30px;
+    font-size:30px;
+    border:2px solid #ccc;
+    padding:5px;
+    border-radius:5px 10px;
+}
+.menu{
+    transition: height 0.3s ease-in;
+    width:100%;
+}
+.slider li{
+    position:absolute;
+}
+.slider{
+    position:relative;
+    height:615px;
+}
+.slider img{
+    z-index:0;
+    opacity:0;
+    transition:all 0.5s ease-in;
+}
+.slider li.active img{
+    z-index:1;
+    opacity:1;
+}
 
 
 
