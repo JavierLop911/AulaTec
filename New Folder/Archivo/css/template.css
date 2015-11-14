@@ -349,6 +349,24 @@ h3{
     z-index:1;
     opacity:1;
 }
+.carrousel-item{
+    width:12.5%;
+}
+.carrousel{
+    width:2280px;
+    max-height:250px;
+}
+.carrousel-cont{
+    overflow:hidden;
+}
+.desactivated-right{
+    background-position:31px 0;
+    cursor:not-allowed;
+}
+.desactivated-left{
+    background-position:0 0;
+    cursor:not-allowed;
+}
 
 
 
