@@ -388,6 +388,9 @@ h3{
     transform: rotate(360deg);
   }
 }
+.selection{
+    margin-left:220px;
+}
 
 
 

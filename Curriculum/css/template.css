@@ -1,0 +1,41 @@
+.head-mid{
+    display:inline-block;
+}
+.header .head-right{
+    height:10px;
+    background-color:#AEA2D0;
+    float:right;
+}
+.header .head-mid{
+    height:10px;
+    width:5%;
+}
+.header .head-left{
+    height:10px;
+    background-color:#D47A7A;
+    float:left;
+}
+.header .head-right, .header .head-left{
+    width:644px;
+}
+h1{
+    color:#4398CE;
+    font-size:20px;
+    display:inline-block;
+}
+.fa-arrow-circle-right{
+    color:#4398CE;
+    font-size:40px;
+}
+.info td p{
+    padding:20px 30px;
+    font-size:15px;
+}
+.tdt{
+    color:#6F6F6F;
+    text-transform:uppercase;
+}
+.fa-male{
+    font-size:20px;
+    color:#AFA3D1;
+}
