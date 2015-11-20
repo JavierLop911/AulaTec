@@ -1,12 +1,12 @@
 .content{
     margin:0 10px 0 10px;
 }
-.hleft, .hright{
+.hleft, .hright, .fleft, .fright{
     height:10px;
     display:inline-block;
 }
-.hleft, .hright{
-    width:650px;
+.hleft, .hright, .fleft, .fright{
+    width:47%;
 }
 .hleft{
     float:left;
@@ -20,7 +20,7 @@ h1{
     color:#4398CE;
     font-size:35px;
 }
-h1 span, .fa-star{
+h1 span, .fa{
     margin-right:25px;
 }
 .tleft, h3{
@@ -57,4 +57,34 @@ hr{
 }
 .fa-star{
     color:#AFA3D1;
+}
+.fa-lightbulb-o{
+    color:#D47A7C;
+    margin-left:8px;
+}
+.skills ul{
+    list-style:none;
+    font-size:30px;
+}
+.skills ul li{
+    margin-left:4px;
+    font-size:20px;
+    color:#676767;
+}
+.fa-desktop{
+    color:#B4D6A3;
+}
+.fa-heart{
+    color:#82CDE2;
+}
+.fleft{
+    background-color:#B4D6A3;
+    float:left;
+}
+.fright{
+    background-color:#78CADF;
+    float:right;
+}
+.space{
+    height:100px;
 }
