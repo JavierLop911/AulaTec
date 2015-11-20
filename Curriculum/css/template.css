@@ -1,41 +1,60 @@
-.head-mid{
+.content{
+    margin:0 10px 0 10px;
+}
+.hleft, .hright{
+    height:10px;
     display:inline-block;
 }
-.header .head-right{
-    height:10px;
-    background-color:#AEA2D0;
-    float:right;
+.hleft, .hright{
+    width:650px;
 }
-.header .head-mid{
-    height:10px;
-    width:5%;
-}
-.header .head-left{
-    height:10px;
-    background-color:#D47A7A;
+.hleft{
     float:left;
+    background-color:#AEA2D0;
 }
-.header .head-right, .header .head-left{
-    width:644px;
+.hright{
+    float:right;
+    background-color:#D27878;
 }
 h1{
     color:#4398CE;
-    font-size:20px;
-    display:inline-block;
+    font-size:35px;
 }
-.fa-arrow-circle-right{
-    color:#4398CE;
-    font-size:40px;
+h1 span, .fa-star{
+    margin-right:25px;
 }
-.info td p{
-    padding:20px 30px;
-    font-size:15px;
-}
-.tdt{
+.tleft, h3{
     color:#6F6F6F;
-    text-transform:uppercase;
 }
-.fa-male{
+.table td, h2, h3{
+    font-size:25px;
+}
+.description{
     font-size:20px;
+    text-align:justify;
+}
+hr{
+    height:1px;
+    width:100%;
+    background-color:#4398CE;
+}
+.facebook, .facebook1{
+    display:inline-block;
+    font-size:20px;
+    margin-top:85px;
+}
+.facebook1{
+    margin-right:10px;
+}
+.none{
+    height:20px;
+}
+.push{
+    margin-left:15px;
+}
+.hola{
+    color:#4398CE;
+}
+.fa-star{
     color:#AFA3D1;
 }
