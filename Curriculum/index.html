@@ -15,146 +15,175 @@
     	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     	<![endif]-->
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    	
+    	<link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100italic,300,400,500italic,100&subset=latin,greek' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="hleft"></div>
-                        <div class="hright"></div>
+            <div class="fluid-container">
+                <header class="header">
+                    <div class="row">
+                        <div class="col-lg-12 frame">
+                            <div class="hleft"></div>
+                            <div class="hright"></div>
+                        </div>
                     </div>
-                </div>
-            </header>
+                </header>
+            </div>
             <!--aqui va una madre que no se como poner-->
-            <section class="content">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1><span><i class="fa fa-info-circle"></i></span>Datos Personales</h1>
-                        <table class="table">
-                            <tr>
-                                <td class="tleft">Nombre</td>
-                                <td>Francisco Javier Lopez Escalera</td>
-                            </tr>
-                            <tr>
-                                <td class="tleft">Nacimiento</td>
-                                <td>04 / junio / 1997</td>
-                            </tr>
-                            <tr>
-                                <td class="tleft">Contacto</td>
-                                <td>449-279-8210</td>
-                            </tr>
-                            <tr>
-                                <td class="tleft">Email</td>
-                                <td>jl2798210@gmail.com</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-lg-6">
-                        <h1><span><i class="fa fa-graduation-cap"></i></span>Educacion</h1>
-                        <table class="table">
-                            <tr>
-                                <td class="tleft">Secundaria</td>
-                                <td>Instituto La Paz</td>
-                            </tr>
-                            <tr>
-                                <td class="tleft">Preparatoria</td>
-                                <td>Preparatoria Cuauhtemoc</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-12"> 
-                                <h1><span><i class="fa fa-suitcase"></i></span>Experiencia</h1>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h2>Teleperformance</h2>
-                                <h3>Septiembre 2014 - Noviembre 2014</h3>
-                            </div>
-                            <div class="col-lg-8">
-                                <h2>Operador de Servicio al Cliente</h2>
-                                <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                            </div>
-                        </div>
-                    </div>        
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1>Perfil</h1>
-                        <hr>
-                        <div class="row">
-                            <div class="col-lg-4">
-                               <img src="http://placehold.it/200x200" class="img-circle"> 
-                            </div>
-                            <div class="col-lg-8">
-                                <div><span class="facebook1"><i class="fa fa-facebook-official"></i></span><p class="facebook">Javier Lopez</p></div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <p class="description push"><span class="hola">Hola! </span>Me llamo Javier, tengo 18 a-os y actualemente curso el quinto semestre de preparatoria</p>
-                            <p class="description push">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <div class="container"> 
+                <section class="content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <img src="http://placehold.it/150x150" class="me">
                         </div>
                     </div>
-                    <div class="col-lg-6 skills">
-                        <h1><span><i class="fa fa-wrench"></i></span>Habilidades</h1>
-                        <hr>
-                        <div class="row">
-                           <div class="col-xs-6">
-                               <h2><span><i class="fa fa-star"></i></span>Habilidades</h2>
-                               <ul>
-                                   <li>Servicio al cliente</li>
-                                   <li>Manejo de Informacion</li>
-                                   <li>Desarrollo web</li>
-                               </ul>
-                           </div>
-                           <div class="col-xs-6">
-                               <h2><span><i class="fa fa-desktop"></i></span>Computacion</h2>
-                               <ul>
-                                   <li>HTML5</li>
-                                   <li>CSS3</li>
-                                   <li>JavaScript</li>
-                               </ul>
-                           </div>
+                    <div class="row information">
+                        <div class="col-lg-6">
+                            <h1 class="PerInf">
+                                <span><i class="fa fa-info-circle"></i></span>
+                                Datos Personales
+                                <span class="button">
+                                    <button id="boton"><p class="fa fa-arrow-circle-down arrow"></p></button>
+                                </span>
+                            </h1>
+                            <table class="table">
+                                <tr>
+                                    <td class="tleft">Nombre</td>
+                                    <td>Francisco Javier Lopez Escalera</td>
+                                </tr>
+                                <tr>
+                                    <td class="tleft">Nacimiento</td>
+                                    <td>04 / junio / 1997</td>
+                                </tr>
+                                <tr>
+                                    <td class="tleft">Contacto</td>
+                                    <td>449-279-8210</td>
+                                </tr>
+                                <tr>
+                                    <td class="tleft">Email</td>
+                                    <td>jl2798210@gmail.com</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-6">
-                               <h2><span><i class="fa fa-lightbulb-o"></i></span>Conocimientos</h2>
-                               <ul>
-                                   <li>Programacion</li>
-                                   <li>Etiquetado</li>
-                                   <li>Diseno Responsivo</li>
-                                   <li>Trabajo en equipo</li>
-                               </ul>
-                           </div>
-                           <div class="col-xs-6">
-                               <h2><span><i class="fa fa-heart"></i></span>Hobbies</h2>
-                               <ul>
-                                   <li>Videojuegos</li>
-                                   <li>Lectura</li>
-                                   <li>Actividades al aire libre</li>
-                                   <li>Peliculas</li>
-                               </ul>
-                           </div>
+                        <div class="col-lg-6">
+                            <h1><span><i class="fa fa-graduation-cap"></i></span>Educacion<span class="button">
+                                    <button id="boton"><p class="fa fa-arrow-circle-down arrow"></p></button>
+                                </span></h1>
+                            <table class="table">
+                                <tr>
+                                    <td class="tleft">Secundaria</td>
+                                    <td>Instituto La Paz</td>
+                                </tr>
+                                <tr>
+                                    <td class="tleft">Preparatoria</td>
+                                    <td>Preparatoria Cuauhtemoc</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                </div>
-            </section>
-            <footer class="footer">
-                <div class="space"></div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="fleft"></div>
-                        <div class="fright"></div>
+                    <div class="row information">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12"> 
+                                    <h1><span><i class="fa fa-suitcase"></i></span>Experiencia<span class="button">
+                                    <button id="boton"><p class="fa fa-arrow-circle-down arrow"></p></button>
+                                </span></h1>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h2>Teleperformance</h2>
+                                    <h3>Septiembre 2014 - Noviembre 2014</h3>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2>Operador de Soporte Tecnico</h2>
+                                    <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>
-            </footer>
+                    <div class="row information">
+                        <div class="col-lg-6">
+                            <h1><span><i class="fa fa-male"></i></span>Perfil<span class="button">
+                                    <button id="boton"><p class="fa fa-arrow-circle-down arrow"></p></button>
+                                </span></h1>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                   <img src="http://placehold.it/180x180" class="img-circle"> 
+                                </div>
+                                <div class="col-lg-8">
+                                    <div><span class="facebook1"><i class="fa fa-facebook-official"></i></span><p class="facebook">Javier Lopez</p></div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <p class="description push"><span class="hola">Hola! </span>Me llamo Javier, tengo 18 a-os y actualemente curso el quinto semestre de preparatoria</p>
+                                <p class="description push">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 skills">
+                            <h1><span><i class="fa fa-wrench"></i></span>Habilidades<span class="button">
+                                    <button id="boton"><p class="fa fa-arrow-circle-down arrow"></p></button>
+                                </span></h1>
+                            <hr>
+                            <div class="row">
+                               <div class="col-xs-6">
+                                   <h2><span><i class="fa fa-star"></i></span>Habilidades</h2>
+                                   <ul>
+                                       <li>Servicio al cliente</li>
+                                       <li>Manejo de Informacion</li>
+                                       <li>Desarrollo web</li>
+                                   </ul>
+                               </div>
+                               <div class="col-xs-6">
+                                   <h2><span><i class="fa fa-desktop"></i></span>Computacion</h2>
+                                   <ul>
+                                       <li>HTML5</li>
+                                       <li>CSS3</li>
+                                       <li>JavaScript</li>
+                                   </ul>
+                               </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                   <h2><span><i class="fa fa-lightbulb-o"></i></span>Conocimientos</h2>
+                                   <ul>
+                                       <li>Programacion</li>
+                                       <li>Etiquetado</li>
+                                       <li>Diseno Responsivo</li>
+                                       <li>Trabajo en equipo</li>
+                                   </ul>
+                               </div>
+                               <div class="col-xs-6">
+                                   <h2><span><i class="fa fa-heart"></i></span>Hobbies</h2>
+                                   <ul>
+                                       <li>Videojuegos</li>
+                                       <li>Lectura</li>
+                                       <li>Actividades al aire libre</li>
+                                       <li>Peliculas</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="fluid-container">
+                <footer class="footer">
+                    <div class="space"></div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="fleft"></div>
+                            <div class="fright"></div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
     </body>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="js/script.js"></script>
 </html>

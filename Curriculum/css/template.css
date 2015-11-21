@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .content{
     margin:0 10px 0 10px;
 }
@@ -26,8 +29,11 @@ h1 span, .fa{
 .tleft, h3{
     color:#6F6F6F;
 }
-.table td, h2, h3{
+.table td, h2{
     font-size:25px;
+}
+h3{
+    font-size:20px;
 }
 .description{
     font-size:20px;
@@ -48,6 +54,19 @@ hr{
 }
 .none{
     height:20px;
+}
+.button .arrow{
+    font-size:20px;
+}
+.button button p{
+    padding-bottom:10px;
+    display:block;
+    color:#606060;
+}
+.button button{
+    float:right;
+    height:28px !important;
+    width:33px !important;
 }
 .push{
     margin-left:15px;
@@ -87,4 +106,46 @@ hr{
 }
 .space{
     height:100px;
+}
+.me{
+    margin:0 auto;
+    display:block;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.frame{
+    padding-right:0;
+}
+@media screen and (max-width:1199px) {
+    .img-circle{
+        margin:0 auto;
+        display:block;
+    }
+}
+@media screen and (max-width:786px){
+    .information td, .information h2,.information p{
+        font-size:18px;
+    }
+    .information h1{
+        font-size:25px;
+    }
+    .information h3{
+        font-size:15;
+    }
+}
+@media screen and (max-width:525px) {
+    .skills h2{
+        font-size:20px;
+    }
+    .skills ul li{
+        font-size:18px;
+    }
+}
+@media screen and (max-width:451px) {
+    .col-xs-6{
+        float:none;
+    }
+    .col-xs-6 h2{
+        width:200px;
+    }
 }
