@@ -80,10 +80,38 @@ $(document).ready(function(){
 })
 $(document).ready(function(){
     $.ajax({
-        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/mamada.html' ,
+        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/biografia.html' ,
         method: 'GET'
-    }).then(function(){
-        console.log(data)
+    }).then(function(data){
         var data = data
+        $(".element1").html(data)
+    })
+    $.ajax({
+        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/educacion.html' ,
+        method: 'GET'
+    }).then(function(data){
+        var data = data
+        $(".element2").html(data)
+    })
+    $.ajax({
+        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/experiencia.html' ,
+        method: 'GET'
+    }).then(function(data){
+        var data = data
+        $(".element3").html(data)
+    })
+    $.ajax({
+        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/perfil.html' ,
+        method: 'GET'
+    }).then(function(data){
+        var data = data
+        $(".element4").html(data)
+    })
+    $.ajax({
+        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/habilidades.html' ,
+        method: 'GET'
+    }).then(function(data){
+        var data = data
+        $(".element5").html(data)
     })
 })
