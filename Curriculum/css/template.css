@@ -150,3 +150,6 @@ hr{
         width:200px;
     }
 }
+.footer .col-lg-12{
+    padding: 0;
+}
