@@ -81,35 +81,35 @@
 // })
 $(document).ready(function(){
     $.ajax({
-        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/biografia.html' ,
+        url : '../biografia.html' ,
         method: 'GET'
     }).then(function(data){
         var data = data
         $(".element1").html(data)
     })
     $.ajax({
-        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/educacion.html' ,
+        url : '../educacion.html' ,
         method: 'GET'
     }).then(function(data){
         var data = data
         $(".element2").html(data)
     })
     $.ajax({
-        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/experiencia.html' ,
+        url : '../experiencia.html' ,
         method: 'GET'
     }).then(function(data){
         var data = data
         $(".element3").html(data)
     })
     $.ajax({
-        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/perfil.html' ,
+        url : '../perfil.html' ,
         method: 'GET'
     }).then(function(data){
         var data = data
         $(".element4").html(data)
     })
     $.ajax({
-        url : 'https://aulatec01-javierlop911.c9.io/Curriculum/habilidades.html' ,
+        url : '../habilidades.html' ,
         method: 'GET'
     }).then(function(data){
         var data = data
@@ -118,66 +118,61 @@ $(document).ready(function(){
 })
 $(document).ready(function(){
     $(".boton1").click(function(){
-       $(".element1").fadeToggle(function(){
-           if($(".arrow1").hasClass("fa-toggle-on")){
+       $(".element1").fadeToggle()
+       if($(".arrow1").hasClass("fa-toggle-on")){
                $(".arrow1").removeClass("fa-toggle-on")
                $(".arrow1").addClass("fa-toggle-off")
           } else {
               $(".arrow1").removeClass("fa-toggle-off")
               $(".arrow1").addClass("fa-toggle-on")
           }
-       })
     });
 });
 $(document).ready(function(){
     $(".boton2").click(function(){
-       $(".element2").fadeToggle(function(){
-           if($(".arrow2").hasClass("fa-toggle-on")){
+       $(".element2").fadeToggle()
+        if($(".arrow2").hasClass("fa-toggle-on")){
                $(".arrow2").removeClass("fa-toggle-on")
                $(".arrow2").addClass("fa-toggle-off")
           } else {
               $(".arrow2").removeClass("fa-toggle-off")
               $(".arrow2").addClass("fa-toggle-on")
           }
-       })
     });
 });
 $(document).ready(function(){
     $(".boton3").click(function(){
-       $(".element3").fadeToggle(function(){
-           if($(".arrow3").hasClass("fa-toggle-on")){
+       $(".element3").fadeToggle()
+       if($(".arrow3").hasClass("fa-toggle-on")){
                $(".arrow3").removeClass("fa-toggle-on")
                $(".arrow3").addClass("fa-toggle-off")
           } else {
               $(".arrow3").removeClass("fa-toggle-off")
               $(".arrow3").addClass("fa-toggle-on")
           }
-       })
     });
 });
 $(document).ready(function(){
     $(".boton4").click(function(){
-       $(".element4").fadeToggle(function(){
-           if($(".arrow4").hasClass("fa-toggle-on")){
+       $(".element4").fadeToggle()
+       if($(".arrow4").hasClass("fa-toggle-on")){
                $(".arrow4").removeClass("fa-toggle-on")
                $(".arrow4").addClass("fa-toggle-off")
           } else {
               $(".arrow4").removeClass("fa-toggle-off")
               $(".arrow4").addClass("fa-toggle-on")
           }
-       })
     });
 });
 $(document).ready(function(){
     $(".boton5").click(function(){
-       $(".element5").fadeToggle(function(){
-           if($(".arrow5").hasClass("fa-toggle-on")){
+       $(".element5").fadeToggle()
+       if($(".arrow5").hasClass("fa-toggle-on")){
                $(".arrow5").removeClass("fa-toggle-on")
                $(".arrow5").addClass("fa-toggle-off")
           } else {
               $(".arrow5").removeClass("fa-toggle-off")
               $(".arrow5").addClass("fa-toggle-on")
           }
-       })
     });
 });

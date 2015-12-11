@@ -153,3 +153,23 @@ hr{
 .footer .col-lg-12{
     padding: 0;
 }
+.table tr:last-child{
+    border-bottom:1px solid #ccc;
+}
+.fa-calendar{
+    color:#D57B7A;
+    font-size:20px;
+}
+.fa-user{
+    color:#B7ABD1;
+    font-size:20px;
+}
+.fa-phone{
+    color:#7DD3E0;
+    font-size:20px;
+}
+.fa-paper-plane{
+    color:#DED68E;
+    font-size:15px;
+}
+
